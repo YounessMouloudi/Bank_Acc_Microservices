@@ -1,0 +1,37 @@
+# hna had l config li drna n9adro ndiroha ta f properties ghi hia mnin tatkon complexe mn l2ahssan ndiroha
+# hna bach tatjina sahla => rah darna un exemple f properties bach tchof dakchi kifach
+
+# hadi tatssma configuration statique càd je suppose que je connais les addresses des services mais dans le
+# pratique on ne connait pas les addresses de services alors la solution c'est la configuration dynamique
+# et pour fair ça j'ai besoin d'utiliser discovery service.
+
+# alors aprés ma 9adina discovery service db ghan9adoh bach yb9a ychercher 3la les routes f discovery services
+# çad on va faire configuration dynamique donc had la partie mab9inach m7tajinha ghanradoha en commentaire
+#spring:
+#  application:
+#    name: Gateway_Service
+#
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: r1
+#          uri: http://localhost:8081/
+#          predicates:
+#             - Path=/customers/**
+#
+#        - id: r2
+#          uri: http://localhost:8082/
+#          predicates:
+#            - Path=/accounts/**
+#
+#server:
+#  port: 8888
+#
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka
+#  instance:
+#    prefer-ip-address: true
